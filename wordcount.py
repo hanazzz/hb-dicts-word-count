@@ -1,14 +1,12 @@
-"""Count words in file."""
-
-
-
-# put your code here.
-from re import I
+# from re import I
 
 
 def word_count(file_name):
+    """Count words in file."""
     #open file and assign to variable
     file_counts = open(file_name)
+    # file_counts = THE LINES WE ACTUALLY WANT!
+    # twain.txt: actual text is lines 44 to 12978
     #create empty dict
     counts_of_words = {}
     #iterate through each line of the text file
@@ -29,6 +27,5 @@ def word_count(file_name):
     for word, count in counts_of_words.items():
         print(f"{word} {count}")
 
-    # print(counts_of_words)
 
-word_count("twain.txt")
+word_count("test.txt")
